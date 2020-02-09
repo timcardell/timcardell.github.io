@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/images.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="css/images.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+
+
+</head>
+<body>
+  <div class="container-fluid parallax">
+    <div class="name_tag ">
+      <p class="font-weight-light social_icon">Tim Cardell</p>
+      <div class="temp">
+        <a href="http://www.linkedin.com/in/tim-cardell-b828b6182" style="color:white;"><div class="p-2 fa fa-linkedin-square zoom"></div></a>
+        <a href="https://github.com/timcardell" style="color:white;"><div class="p-2 fa fa-github-square zoom"></div></a>
+      </div>
+      <a href="#aboutme_ankare"><button type="button" class="btn btn-outline-light">About me</button></a>
+      <a href="#course_ankare"><button type="button" class="btn btn-outline-light">My projects</button></a>
+
+      <div class="social_icon"></div>
+    </div>
+  </div>
+
+
+  <!--about me page-->
+
+  <div class="container-fluid aboutme" id="aboutme_ankare">
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-xs-12">
+        <div class="d-flex justify-content-center"><img src="person.svg"style="height:100px;" class="icon_aboutme"/></div>
+        <p class="font-weight-light ml-5 mr-5 mb-5" style="color:white;">It's indeed not taboo
+          but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
+          up transmitting less bytes over the wire each time you request the rendered HTML</p>
+      </div>
+      <div class="col-lg-6 col-md-6 col-xs-12 mt-4 mb-4">
+        <img src="tim.jpeg" height="200px" width="135px" class=" ml-5"/>
+      </div>
+    </div>
+  </div>
+  <!--project page-->
+  <div class="container-fluid course_page">
+
+
+
+    <div class="row">
+      <div class="col-12 navbar_thingy">
+
+        <p class =" font-weight-light mt-5" id="course_ankare" style="color:black; text-align:center;"> My projects </p>
+
+      </div>
+    </div>
+    <hr class="hrstyle">
+
+
+    <div class="row m-4 course_items">
+      <div class="col-4">
+        <p class ="project_font font-weight-light"> Monte Carlo ray tracer </p>
+        <p class ="course_sub_header font-weight-light"> <b>TNCG15- Advanced Global Illumination and Rendering </b></p>
+        <p class="course_text font-weight-light">It's indeed not taboo
+          but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
+          up transmitting less bytes over the wire each time you request the rendered HTML</p>
+          <div class="github_text"><a href="https://github.com/TobiasRyttlinger/TNCG15---Monte-carlo-ray-tracer" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+
+                <div class="col-md-8 mt-4 mb-4">
+                  <a href="global.png" data-toggle="lightbox">
+                    <img src="global.png" class="img-fluid imghover zoom2 ">
+                  </a>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                  <div class="row">
+                    <div class="col-md-12 ">
+                      <a href="Lambertian.png" data-toggle="lightbox" class="w-100">
+                        <img src="Lambertian.png" class="img-fluid imghover zoom2">
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 mt-5">
+
+                      <a href="OrenWithoutColor.png" data-toggle="lightbox">
+                        <img src="OrenWithoutColor.png" class="img-fluid imghover zoom2 ">
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="hrstyle">
+
+  <div class="row m-4 course_items">
+    <div class="col-8">
+      <p class ="project_font font-weight-light"> Facial recognition </p>
+      <p class ="course_sub_header font-weight-light"> <b>TNM034- Advanced Image Processing </b></p>
+      <p class="course_text font-weight-light">A common approach to solve the facial recognition problem is the Principal Component Ananlysis (PCA). This algorithm reduces the number of variables by
+        representing the training set of images as linear combinations of weighted eigenvectors. This algorithm was implemented on a database of images using Matlab.
+
+      </p>
+      <p> Written in: Matlab</p>
+      <div class="github_text"><a href="https://github.com/timcardell/Project_TNM034" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+
+            <div class="col-md-12 mt-4 mb-4">
+              <a href="global.png" data-toggle="lightbox">
+                <img src="matlab.png" class="img-fluid imghover zoom2 ">
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<hr class="hrstyle">
+
+<div class="row m-4 course_items">
+  <div class="col-4">
+    <p class ="project_font font-weight-light"> Compressor and bike data visualization   </p>
+    <p class ="course_sub_header font-weight-light"> <b>TNM094- Bachelor project </b></p>
+    <p class="course_text font-weight-light">It's indeed not taboo
+      but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
+      up transmitting less bytes over the wire each time you request the rendered HTML</p>
+      <div class="github_text"><a href="https://github.com/emied/TNM094" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+
+            <div class="col-md-8 mt-4 mb-5">
+              <a href="compressorMain.png" data-toggle="lightbox" data-width="1280">
+                <img src="compressorMain.png" class="img-fluid imghover zoom2  ">
+              </a>
+            </div>
+
+            <div class="col-md-4 mt-4">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <a href="mainBike.png" data-toggle="lightbox" class="w-100" >
+                    <img src="mainBike.png" class="img-fluid imghover zoom2">
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 mt-4">
+
+                  <a href="compressorID.png" data-toggle="lightbox">
+                    <img src="compressorID.png" class="img-fluid imghover zoom2 ">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<hr class="hrstyle">
+
+
+
+
+</div>
+
+<div class=" font-weight-light footer_thingy">
+  <p> &copy Tim Cardell</p>
+  <p><span class="glyphicon glyphicon-envelope"></span> timcal04.04@gmail.com</p>
+
+
+</div>
+
+
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox();
+});
+console.log(document);
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+</body>
+</html>
