@@ -93,6 +93,7 @@ p.aboutme_text{
 
 .social_icon{
   margin-top: 400px;
+  font-size: 40px;
 }
 
 .temp{
@@ -196,8 +197,13 @@ p.footer_thingy{
   color:white;
 }
 
+.footer_things{
+  font-size: 40px;
+}
+
 .icon_aboutme{
         filter: invert(100%) sepia(81%) saturate(2%) hue-rotate(241deg) brightness(113%) contrast(101%);
+        float:left;
     }
 
 .personicondiv{

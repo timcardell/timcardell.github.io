@@ -26,8 +26,7 @@
     <div class="name_tag ">
       <p class="font-weight-light social_icon">Tim Cardell</p>
       <div class="temp">
-        <a href="http://www.linkedin.com/in/tim-cardell-b828b6182" style="color:white;"><div class="p-2 fa fa-linkedin-square zoom"></div></a>
-        <a href="https://github.com/timcardell" style="color:white;"><div class="p-2 fa fa-github-square zoom"></div></a>
+        <p class="font-weight-light">Portfolio</p>
       </div>
       <a href="#aboutme_ankare"><button type="button" class="btn btn-outline-light">About me</button></a>
       <a href="#course_ankare"><button type="button" class="btn btn-outline-light">My projects</button></a>
@@ -42,113 +41,134 @@
   <div class="container-fluid aboutme" id="aboutme_ankare">
 
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-xs-12">
+
+
+      <div class="col-lg-4 col-md-4 col-xs-12 mt-4 mb-4">
+        <div class="d-flex justify-content-center"><img src="tim.jpeg" class="rounded" height="200px" width="135px;" /></div>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-xs-12">
         <div class="d-flex justify-content-center"><img src="person.svg"style="height:100px;" class="icon_aboutme"/></div>
         <p class="font-weight-light ml-5 mr-5 mb-5" style="color:white;">It's indeed not taboo
           but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
           up transmitting less bytes over the wire each time you request the rendered HTML</p>
-      </div>
-      <div class="col-lg-6 col-md-6 col-xs-12 mt-4 mb-4">
-        <img src="tim.jpeg" height="200px" width="135px" class=" ml-5"/>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-xs-12 mt-5 mb-4">
+          <div class="d-flex justify-content-left"><img src="mail.svg"style="height:36px;" class="icon_aboutme"/>
+            <p class="font-weight-light mt-2 " style="color:white; font-size:18px; margin-left:7px;">timcal04.04@gmail.com </p>
+          </div>
+          <div class="d-flex justify-content-left ml-1"><img src="github.svg"style="height:33px;" class="icon_aboutme"/>
+            <a href="https://github.com/timcardell" style="color:white;"><p class="font-weight-light mt-2 " style="color:white; font-size:18px; margin-left:10px;"> timcardell </p></a>
+          </div>
+          <div class="d-flex justify-content-left ml-1 mr-2"><img src="linkedin.svg"style="height:33px; " class="icon_aboutme"/>
+            <a href="http://www.linkedin.com/in/tim-cardell-b828b6182" style="color:white;"><p class="font-weight-light mt-2" style="color:white; font-size:18px; margin-left:10px;"> Tim Cardell </p></a>
+          </div>
+        </div>
+
+
+
+
+
       </div>
     </div>
-  </div>
-  <!--project page-->
-  <div class="container-fluid course_page">
+    <!--project page-->
+    <div class="container-fluid course_page">
 
 
 
-    <div class="row">
-      <div class="col-12 navbar_thingy">
+      <div class="row">
+        <div class="col-12 navbar_thingy">
 
-        <p class =" font-weight-light mt-5" id="course_ankare" style="color:black; text-align:center;"> My projects </p>
-
-      </div>
-    </div>
-    <hr class="hrstyle">
-
-
-    <div class="row m-4 course_items">
-      <div class="col-4">
-        <p class ="project_font font-weight-light"> Monte Carlo ray tracer </p>
-        <p class ="course_sub_header font-weight-light"> <b>TNCG15- Advanced Global Illumination and Rendering </b></p>
-        <p class="course_text font-weight-light">It's indeed not taboo
-          but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
-          up transmitting less bytes over the wire each time you request the rendered HTML</p>
-          <div class="github_text"><a href="https://github.com/TobiasRyttlinger/TNCG15---Monte-carlo-ray-tracer" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+          <p class =" font-weight-light mt-5" id="course_ankare" style="color:black; text-align:center;"> My projects </p>
 
         </div>
-        <div class="col-8">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
+      </div>
+      <hr class="hrstyle">
 
-                <div class="col-md-8 mt-4 mb-4">
-                  <a href="global.png" data-toggle="lightbox">
-                    <img src="global.png" class="img-fluid imghover zoom2 ">
-                  </a>
-                </div>
 
-                <div class="col-md-4 mt-4">
-                  <div class="row">
-                    <div class="col-md-12 ">
-                      <a href="Lambertian.png" data-toggle="lightbox" class="w-100">
-                        <img src="Lambertian.png" class="img-fluid imghover zoom2">
-                      </a>
-                    </div>
+      <div class="row m-4 course_items">
+        <div class="col-4">
+          <p class ="project_font font-weight-light"> Monte Carlo ray tracer </p>
+          <p class ="course_sub_header font-weight-light"> <b>TNCG15- Advanced Global Illumination and Rendering </b></p>
+          <p class="course_text font-weight-light">In this project, a Monte Carlo ray tracer wrere implemented using C++. Monte-Carlo path tracing is a global illumination model.
+            Essentially, path tracing examines all the arriving illumination of a certain point, and depedning what kind of surface the ray hits, different operations were made. This version can handle diffuse surfaces (Both Lambertian and Oren-Nayar), glass and specular surfaces.</p>
+            <div class="github_text"><a href="https://github.com/TobiasRyttlinger/TNCG15---Monte-carlo-ray-tracer" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+
+          </div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+
+                  <div class="col-md-8 mt-4 mb-4">
+                    <a href="global.png" data-toggle="lightbox">
+                      <img src="global.png" class="img-fluid imghover zoom2 ">
+                    </a>
                   </div>
 
-                  <div class="row">
-                    <div class="col-md-12 mt-5">
+                  <div class="col-md-4 mt-4">
+                    <div class="row">
+                      <div class="col-md-12 ">
+                        <a href="Lambertian.png" data-toggle="lightbox" class="w-100">
+                          <img src="Lambertian.png" class="img-fluid imghover zoom2">
+                        </a>
+                      </div>
+                    </div>
 
-                      <a href="OrenWithoutColor.png" data-toggle="lightbox">
-                        <img src="OrenWithoutColor.png" class="img-fluid imghover zoom2 ">
-                      </a>
+                    <div class="row">
+                      <div class="col-md-12 mt-5">
 
+                        <a href="OrenWithoutColor.png" data-toggle="lightbox">
+                          <img src="OrenWithoutColor.png" class="img-fluid imghover zoom2 ">
+                        </a>
+
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <hr class="hrstyle">
+    <hr class="hrstyle">
 
-  <div class="row m-4 course_items">
-    <div class="col-8">
-      <p class ="project_font font-weight-light"> Facial recognition </p>
-      <p class ="course_sub_header font-weight-light"> <b>TNM034- Advanced Image Processing </b></p>
-      <p class="course_text font-weight-light">A common approach to solve the facial recognition problem is the Principal Component Ananlysis (PCA). This algorithm reduces the number of variables by
-        representing the training set of images as linear combinations of weighted eigenvectors. This algorithm was implemented on a database of images using Matlab.
+    <div class="row m-4 course_items">
+      <div class="col-8">
+        <p class ="project_font font-weight-light"> Facial recognition </p>
+        <p class ="course_sub_header font-weight-light"> <b>TNM034- Advanced Image Processing </b></p>
+        <p class="course_text font-weight-light">A common approach to solve the facial recognition problem is the Principal Component Ananlysis (PCA). This algorithm reduces the number of variables by
+          representing the training set of images as linear combinations of weighted eigenvectors. This algorithm was implemented on a database of images using Matlab.
 
-      </p>
-      <p> Written in: Matlab</p>
-      <div class="github_text"><a href="https://github.com/timcardell/Project_TNM034" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
-    </div>
-    <div class="col-4">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
+        </p>
+        <p> Written in: Matlab</p>
+        <div class="github_text"><a href="https://github.com/timcardell/Project_TNM034" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+      </div>
+      <div class="col-4">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
 
-            <div class="col-md-12 mt-4 mb-4">
-              <a href="global.png" data-toggle="lightbox">
-                <img src="matlab.png" class="img-fluid imghover zoom2 ">
-              </a>
+              <div class="col-md-12 mt-4 mb-4">
+                <a href="global.png" data-toggle="lightbox">
+                  <img src="matlab.png" class="img-fluid imghover zoom2 ">
+                </a>
+              </div>
+
             </div>
-
           </div>
+
+
         </div>
-
-
       </div>
     </div>
   </div>
-</div>
 </div>
 <hr class="hrstyle">
 
@@ -156,10 +176,10 @@
   <div class="col-4">
     <p class ="project_font font-weight-light"> Compressor and bike data visualization   </p>
     <p class ="course_sub_header font-weight-light"> <b>TNM094- Bachelor project </b></p>
-    <p class="course_text font-weight-light">It's indeed not taboo
+    <p class="course_text font-weight-light mb-5">It's indeed not taboo
       but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
       up transmitting less bytes over the wire each time you request the rendered HTML</p>
-      <div class="github_text"><a href="https://github.com/emied/TNM094" style="color:black;"> Go to repository<div class="p-2 fa fa-github"></div></a></div>
+      <div class="github_text"><a href="https://github.com/emied/TNM094" style="color:black;"> Go to repository<div class="p-2 fa fa-github "></div></a></div>
 
     </div>
     <div class="col-8">
@@ -171,6 +191,7 @@
               <a href="compressorMain.png" data-toggle="lightbox" data-width="1280">
                 <img src="compressorMain.png" class="img-fluid imghover zoom2  ">
               </a>
+
             </div>
 
             <div class="col-md-4 mt-4">
@@ -193,6 +214,58 @@
               </div>
             </div>
           </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<hr class="hrstyle">
+
+<div class="row m-4 course_items">
+  <div class="col-4">
+    <p class ="project_font font-weight-light"> Gummy bear physics model   </p>
+    <p class ="course_sub_header font-weight-light"> <b>TNM085- Modelling project </b></p>
+    <p class="course_text font-weight-light mb-5">It's indeed not taboo
+      but separating them is handy as then you can easily adjust in one place if needed. Also putting it in a separate CSS file is better for performance as it can be cached by the browser and you end
+      up transmitting less bytes over the wire each time you request the rendered HTML</p>
+      <div class="github_text"><a href="https://github.com/emied/TNM094" style="color:black;"> Go to repository<div class="p-2 fa fa-github "></div></a></div>
+
+    </div>
+    <div class="col-8">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+
+            <div class="col-md-8 mt-4 mb-5">
+              <a href="Scen.png" data-toggle="lightbox" data-width="1280">
+                <img src="Scen.png" class="img-fluid imghover zoom2  ">
+              </a>
+
+            </div>
+
+            <div class="col-md-4 mt-4">
+              <div class="row">
+                <div class="col-md-12 ">
+                  <a href="Box.png" data-toggle="lightbox" class="w-100" >
+                    <img src="Box.png" class="img-fluid imghover zoom2">
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 mt-4">
+
+                  <a href="plot.png" data-toggle="lightbox">
+                    <img src="plot.png" class="img-fluid imghover zoom2 ">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -207,9 +280,12 @@
 </div>
 
 <div class=" font-weight-light footer_thingy">
-  <p> &copy Tim Cardell</p>
-  <p><span class="glyphicon glyphicon-envelope"></span> timcal04.04@gmail.com</p>
 
+  <div class="d-flex justify-content-center"><p class="p-2 fa fa-coffee mt-5" style="color:white; font-size: 60px;"></p></div>
+  <div class="d-flex flex-row-reverse">
+  <div class="p-2">&copy Tim Cardell</div>
+
+</div>
 
 </div>
 
