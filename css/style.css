@@ -178,9 +178,10 @@ p.course_sub_header{
 
 
 .github_text{
-  position: absolute;
+  
   bottom:0;
   font-size: 18px;
+  margin-top: 15px;
 }
 
 .footer_thingy{
