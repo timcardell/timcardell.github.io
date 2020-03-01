@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project Crime data visualization</title>
+  <!--
+  <link rel="stylesheet" href="{{ url_for('static', filename='libs/css/index.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='libs/bootstrap/css/bootstrap.min.css') }}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" />
+-->
+
+<link rel="stylesheet" href="libs/css/index.css" />
+<link rel="stylesheet" href="libs/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="libs/css/d3.parsets.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" />
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+
+        <div id="mapid">
+          <div class="card text-center float-right" id="info">
+            <div class="card-header">
+              <h2>Information</h2>
+              <hr></hr>
+              <div id="infobox">
+                <div id="borough"> </div>
+                <div id="Age"> </div>
+                <div id="Height"> </div>
+                <div id="date"> </div>
+                <div id="report"> </div>
+                <div id="completed"> </div>
+                <div id="place"> </div>
+                <div id="type"> </div>
+                <div id="cluster"> </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12">
+        <h3 class="font-weight-light" style="color:white; text-align:center;">Categorical data of New York crime</h3><br>
+        <p class="font-weight-light" style="color:white; text-align:center;">Parallell sets</>
+        <div id="vis" class="mb-5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="page-footer font-small teal pt-4 mt-5" style="z-index:1000; background-color:#262626;">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase font-weight-bold text-light">About the visualization techniques</h5>
+          <p class="text-light">Visualization of crime data in New York in the course TNM048. Using a scatterplot on a map aswell as a heatmap to locate and display
+          cluster and the borough with the most amount of crime. A Parallell set is used to show potential trends and to visualize the data even more. </p>
+
+        </div>
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase font-weight-bold text-light">About the clustering method</h5>
+          <p class="text-light">The clustering method applied to this project is DBSCAN. This method is density based,...... </p>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3">
+        <div class="githubText"><a href="https://github.com/TobiasRyttlinger/TNM048-Project"/><img src="github.svg" height="30px" width="30px" style="left:20px;"></div><br>
+
+      </div>
+    </div>
+    </footer>
+
+</body>
+
+
+<script type=text/javascript src="libs/jquery/jquery.min.js"></script>
+<script type=text/javascript src="js/bootstrap.js"></script>
+<script type="text/javascript" src="libs/d3/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0/leaflet-src.js"></script>
+
+<!-- our scripts -->
+<script type="text/javascript" src="js/DBSCAN.js"></script>
+<script src="js/map.js"></script>
+<script src="js/main.js"></script>
+<script src="js/chart.js"></script>
+<script src="js/choropleth.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3.parsets.js"></script>
+<script src="js/highlight.min.js"></script>
+<script src="js/d3.parsets.userFilt.js"></script>
+
+
+
+</html>

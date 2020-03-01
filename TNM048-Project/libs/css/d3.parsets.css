@@ -1,0 +1,35 @@
+.dimension { cursor: ns-resize; }
+.category { cursor: ew-resize; }
+.dimension tspan.name { font-size: 1.5em; fill: #fff; font-weight: bold; }
+.dimension tspan.sort { fill: #fff; cursor: pointer; opacity: 0; }
+.dimension tspan.sort:hover { fill: yellow; }
+.dimension:hover tspan.name { fill: #fff; }
+.dimension:hover tspan.sort { opacity: 1; }
+.dimension line { stroke: #fff;  fill-opacity: 0.6;}
+.dimension text { color: #fff; }
+.dimension rect { stroke: none; fill-opacity: 0; }
+.dimension > rect, .category-background { fill: #fff;}
+.dimension > rect, .category-background.dy { color: #fff;}
+.dimension > rect { display: none;  color: }
+.category:hover rect { fill-opacity: .3; }
+.dimension:hover > rect { fill-opacity: .3; }
+.ribbon path { stroke-opacity: 0; fill-opacity: .5; }
+.ribbon path.active { fill-opacity: 1; }
+.ribbon-mouse path { fill-opacity: 0; }
+
+.category-0 { fill: #121212; stroke: #bb86fd; }
+.category-1 { fill: #fddb86; stroke: #fddb86; }
+.category-2 { fill: #c7fd86; stroke: #c7fd86; }
+.category-3 { fill: #fd86c7; stroke: #fd86c7; }
+.category-4 { fill: #9467bd; stroke: #9467bd; }
+.category-5 { fill: #8c564b; stroke: #8c564b; }
+.category-6 { fill: #e377c2; stroke: #e377c2; }
+.category-7 { fill: #7f7f7f; stroke: #7f7f7f; }
+.category-8 { fill: #bcbd22; stroke: #bcbd22; }
+.category-9 { fill: #17becf; stroke: #17becf; }
+
+.tooltip {
+  background-color: rgba(242, 242, 242, .6);
+  position: absolute;
+  padding: 5px;
+}

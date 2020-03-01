@@ -1,0 +1,125 @@
+
+
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+.no-mouse {
+  pointer-events: none;
+}
+#mapid {
+  -webkit-box-shadow: 3px 7px 12px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 7px 12px -4px rgba(0,0,0,0.75);
+  box-shadow: 3px 7px 12px -4px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  position: relative;
+  height:500px;
+  margin: 0 auto;
+}
+#vis{
+  -webkit-box-shadow: 3px 7px 12px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 7px 12px -4px rgba(0,0,0,0.75);
+  box-shadow: 3px 7px 12px -4px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  text-align: center;
+  background-color: #262626 ;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 10px;
+
+}
+
+.card{
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  pointer-events: none;
+  background-color: transparent !important;
+  z-index: 1000;
+}
+
+#infobox{
+  font-size: 14px;
+  text-align: left;
+  color:white;
+}
+
+hr{
+  background-color: white;
+}
+
+.navbar{
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: transparent !important;
+  pointer-events: none;
+
+}
+
+
+/*Legend specific*/
+.legend {
+  padding: 6px 8px;
+  font: 14px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  line-height: 24px;
+  color: #555;
+
+  left: -20px;
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 12px 8px;
+  color: #777;
+}
+
+.legend span {
+  position: relative;
+  bottom: 3px;
+
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 8px 0 0;
+  opacity: 0.7;
+}
+
+.legend i.icon {
+  background-size: 18px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#info{
+  display: none;
+}
+
+#svgId{
+  display: none;
+}
+
+.buttons{
+  background-color: inherit;
+}
+
+.githubText{
+  filter: invert(100%) sepia(81%) saturate(2%) hue-rotate(241deg) brightness(113%) contrast(101%);
+transition: transform .2s;
+
+}
+
+
+
+
+.githubText:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.infotext{
+  color:white;
+  font: 20px Arial, Helvetica, sans-serif;
+}
