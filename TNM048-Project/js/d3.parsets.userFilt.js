@@ -5,7 +5,7 @@
 var userFilt = {};
 
 //userFilt["selected_options"] = ["Borough","Level", "Type","Completed","Sex_susp","Age_vic","cluster","Place","Race_susp","Age_susp"];
-userFilt["selected_options"] = ["Cluster","Borough", "Sex_susp","Level"];
+userFilt["selected_options"] = ["Cluster","Borough", "Place","Sex_susp"];
 
 //////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////   Helper Functions  /////////////////////////////////////

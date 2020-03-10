@@ -7,10 +7,10 @@ d3.csv("data/NYPD_Complaint_Data_Historic_new.csv", function(data){
 
     //-------parse Data------------
     data = parseData(data);
-    console.log(data)
+   console.log(data)
 
 
-    dbscan_result = DBSCAN().eps(6).minPts(20).data(data.features);
+    dbscan_result = DBSCAN().eps(9).minPts(1000).data(data.features);
     var [ClusterAssignment,NumClusters] = dbscan_result();
 
 
@@ -25,7 +25,7 @@ d3.csv("data/NYPD_Complaint_Data_Historic_new.csv", function(data){
 
 
 
-    console.log(NumClusters);
+    console.log("Number of clusters: " + NumClusters);
 
      world_map = new worldMap(data,NumClusters);
      chart = new build_parallel_sets(data.features,data.features);
@@ -123,6 +123,10 @@ function ageGroupParse(d){
 function reported(rep, dateO){
     rep = dateParse(rep);
     dateO = dateParse(dateO);
+    if(isNaN(dateO.date)){
+      rep.days = 0;
+      return rep
+    } 
     var day = rep.date - dateO.date;
     var m = rep.month-   dateO.month;
     var y = rep.year - dateO.year;
@@ -149,6 +153,5 @@ function sexParse(d){
     if(ans === 3 || ans === 2|| ans== 4)d =  "M"
 
   }
-    console.log(d);
   return d;
 }

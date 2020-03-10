@@ -17,16 +17,13 @@
 .ribbon path.active { fill-opacity: 1; }
 .ribbon-mouse path { fill-opacity: 0; }
 
-.category-0 { fill: #121212; stroke: #bb86fd; }
+.category-0 { fill: #121212; stroke: #121212; }
 .category-1 { fill: #fddb86; stroke: #fddb86; }
 .category-2 { fill: #c7fd86; stroke: #c7fd86; }
 .category-3 { fill: #fd86c7; stroke: #fd86c7; }
-.category-4 { fill: #9467bd; stroke: #9467bd; }
-.category-5 { fill: #8c564b; stroke: #8c564b; }
-.category-6 { fill: #e377c2; stroke: #e377c2; }
-.category-7 { fill: #7f7f7f; stroke: #7f7f7f; }
-.category-8 { fill: #bcbd22; stroke: #bcbd22; }
-.category-9 { fill: #17becf; stroke: #17becf; }
+.category-4 { fill: #e31a1c; stroke: #e31a1c; }
+.category-5 { fill: #bb86fd; stroke: #bb86fd; }
+
 
 .tooltip {
   background-color: rgba(242, 242, 242, .6);

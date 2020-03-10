@@ -16,8 +16,8 @@ function worldMap(data,numClusters) {
 
   var cValue = function(d) { return d;};
   var scaleQuantColor = d3.scale.quantile()
-  .range(["#121212","#fddb86","#c7fd86","#fd86c7","#e31a1c","#e31a1c","#fdbf6f","#ff7f00","#fd86c7","#c7fd86","#fddb86","#bb86fd"])
-  .domain([0,numClusters+1]);
+  .range(["#121212","#fddb86","#c7fd86","#fd86c7", "#e31a1c"])
+  .domain([0,4]);
 
 
 
@@ -51,12 +51,12 @@ function worldMap(data,numClusters) {
             if(element.properties.Sex_vic === "F")boro.properties.women_vic +=1;
             if(element.properties.Sex_vic === "E")boro.properties.E_vic +=1;
             boro.properties.reported += element.properties.Reported.days;
-            if(element.properties.Age_susp !== undefined){
-              boro.properties.ageSM += element.properties.Age_susp;
+            if(element.properties.AgeSuspect !== undefined){
+              boro.properties.ageSM += element.properties.AgeSuspect;
               count2++;
             }
-            if(element.properties.Age_vic !== undefined){
-              boro.properties.ageVM += element.properties.Age_vic;
+            if(element.properties.AgeVictim !== undefined){
+              boro.properties.ageVM += element.properties.AgeVictim;
               count3++;
             }
           }
@@ -69,7 +69,7 @@ function worldMap(data,numClusters) {
 
   //color depending on crime
   var boroColor = d3.scale.linear()
-  .domain([0, 409])
+  .domain([0, 3683])
   .range(['white', 'red']);
   //style of choropleth
 
@@ -146,9 +146,7 @@ infotext.addTo(leaflet_map);
         this._div.innerHTML += '<span> Crimes committed by males: <b>'+d.men_susp+'</b> </span><br>';
         this._div.innerHTML += '<span> Crimes committed by females: <b>'+d.women_susp+' </b></span><br>';
         this._div.innerHTML += '<span> Nr of male victims:<b> '+d.men_vic+' </b></span><br>';
-        this._div.innerHTML += '<span> Nr of male victims:<b> '+d.women_vic+' </b></span><br>';
-
-
+        this._div.innerHTML += '<span> Nr of female victims:<b> '+d.women_vic+' </b></span><br>';
   }
 legend.addTo(leaflet_map);
   function choroplethStyle(d) {
@@ -240,6 +238,7 @@ legend.addTo(leaflet_map);
   .style("opacity", 0.8)
   .attr('r', 5)
   .style("fill", function(d) {
+
     return scaleQuantColor(cValue(d.properties.Cluster));
   })
   .on('mouseover', function(d){
@@ -255,10 +254,7 @@ legend.addTo(leaflet_map);
     " Time: "+ d.properties.Time_occurance.string);
     select
     .select('#Age')
-    .text('Age of criminal: ' + d.properties.Age + ' years');
-    select
-    .select('#Height')
-    .text('Height of criminal: ' + d.properties.Length +' cm');
+    .text('Age of criminal: ' + d.properties.AgeSuspect + ' years');
     select
     .select('#report')
     .text(function () {return 'Reported after : ' +  d.properties.Reported.days  + " days";})
