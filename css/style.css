@@ -212,3 +212,15 @@ p.footer_thingy{
 
 
 }
+
+.modal-body{
+  align-content: center;
+  width: 170%;
+  height: 200%;
+  background-color: white;
+  right: 120px;
+}
+
+.ekko-lightbox-container{
+  opacity: 1;
+}
