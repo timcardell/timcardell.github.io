@@ -35,7 +35,20 @@
       <div class="social_icon"></div>
     </div>
   </div>
+<!--scroll down-->
+<script>
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
 
+<section id="section03" class="demo">
+
+  <a href="#aboutme_ankare"><span></span></a>
+</section>
 
   <!--about me page-->
 
